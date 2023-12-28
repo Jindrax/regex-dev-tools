@@ -1,0 +1,57 @@
+{
+  "name": "regex-dev-tools",
+  "displayName": "Regex dev tools",
+  "description": "Scripts to make things easier",
+  "version": "0.0.4",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "regex-dev-tools.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "regex-dev-tools.formatToQuery",
+        "title": "Format to query"
+      },
+      {
+        "command": "regex-dev-tools.formatToWhereArray",
+        "title": "Format to where array"
+      },
+      {
+        "command": "regex-dev-tools.formatToGeneralArray",
+        "title": "Format to general array"
+      },
+      {
+        "command": "regex-dev-tools.removeDuplicates",
+        "title": "Remove duplicates from selection"
+      },
+      {
+        "command": "regex-dev-tools.getDifferencesFromSelection",
+        "title": "Get differences from selection"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  },
+  "publisher": "JairoVanegasGarcia"
+}
